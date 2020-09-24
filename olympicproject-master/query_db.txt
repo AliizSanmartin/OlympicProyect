@@ -1,0 +1,36 @@
+CREATE TABLE Deportista (
+ idDep SERIAL PRIMARY KEY,
+ nombre CHAR(200) NOT NULL,
+ medalla CHAR(50) NOT NULL,
+ fecha CHAR(50) NOT NULL
+);
+
+INSERT INTO Deportista (nombre,medalla,fecha) VALUES('Alisson Sanmartín','Oro','12-12-1999');
+INSERT INTO Deportista (nombre,medalla,fecha) VALUES('Alex Aguacondo','Oro','10-12-1999');
+
+SELECT * FROM Deportista;
+
+CREATE TABLE DeportistaAtletismo (
+ idDep SERIAL PRIMARY KEY,
+ nombre CHAR(200) NOT NULL,
+ medalla CHAR(50) NOT NULL,
+ fecha CHAR(50) NOT NULL
+);
+
+INSERT INTO DeportistaAtletismo (nombre,medalla,fecha) VALUES('Miguel Reina','Oro','12-12-1999');
+INSERT INTO DeportistaAtletismo (nombre,medalla,fecha) VALUES('Edison Almeida','Oro','10-12-1999');
+
+SELECT * FROM DeportistaAtletismo;
+
+
+CREATE TABLE DeportistaPatinaje (
+ idDep SERIAL PRIMARY KEY,
+ nombre CHAR(200) NOT NULL,
+ medalla CHAR(50) NOT NULL,
+ fecha CHAR(50) NOT NULL
+);
+
+INSERT INTO DeportistaPatinaje (nombre,medalla,fecha) VALUES('Esteban Andaluz','Oro','12-12-1999');
+INSERT INTO DeportistaPatinaje (nombre,medalla,fecha) VALUES('Cristian Amaguaña','Oro','10-12-1999');
+
+SELECT * FROM DeportistaPatinaje;
